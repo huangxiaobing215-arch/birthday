@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Happy birthday 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================== -->
+    <!-- 第一页：生日首页 -->
+    <!-- ==================== -->
+
+    <h1>🎂 Happy birthday！</h1>
+
+    <p>
+        Welcome to your own little birthday world
+    </p>
+
+    <button id="startButton">
+        Start exploring 🎁
+    </button>
+
+
+
+    <!-- ==================== -->
+    <!-- 第二页：制作蛋糕 -->
+    <!-- ==================== -->
+
+    <div id="gamePage">
+
+        <h2>🎂 Make a Birthday Cake</h2>
+
+        <p>
+            Design a special cake for yourself!
+        </p>
+
+
+        <!-- 蛋糕 -->
+
+        <div class="cake-area">
+
+            <div class="cake">
+
+                <div class="candle">
+                    🕯️
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 选择蛋糕口味 -->
+
+        <div class="options">
+
+            <h3>🍰 Choose your cake</h3>
+
+            <button
+                class="cake-option"
+                data-color="#d9a066">
+
+                🍰 Vanilla
+
+            </button>
+
+
+            <button
+                class="cake-option"
+                data-color="#7b4b3a">
+
+                🍫 Chocolate
+
+            </button>
+
+
+            <button
+                class="cake-option"
+                data-color="#e98ba3">
+
+                🍓 Strawberry
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 选择奶油 -->
+
+        <div class="cream-options">
+
+            <h3>🧁 Choose your cream</h3>
+
+            <button
+                class="cream-option"
+                data-cream="#fff0f5">
+
+                🤍 White
+
+            </button>
+
+
+            <button
+                class="cream-option"
+                data-cream="#ff9fba">
+
+                💗 Pink
+
+            </button>
+
+
+            <button
+                class="cream-option"
+                data-cream="#c9a7eb">
+
+                💜 Purple
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 添加装饰 -->
+
+        <div class="decoration-options">
+
+            <h3>✨ Add decorations</h3>
+
+            <button
+                class="decoration-option"
+                data-decoration="🍓">
+
+                🍓 Strawberry
+
+            </button>
+
+
+            <button
+                class="decoration-option"
+                data-decoration="🍒">
+
+                🍒 Cherry
+
+            </button>
+
+
+            <button
+                class="decoration-option"
+                data-decoration="🍫">
+
+                🍫 Chocolate
+
+            </button>
+
+
+            <button
+                class="decoration-option"
+                data-decoration="⭐">
+
+                ⭐ Star
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 添加蜡烛 -->
+
+        <div class="candle-options">
+
+            <h3>🕯️ Add candles</h3>
+
+            <button id="addCandle">
+
+                🕯️ Add a candle
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 完成蛋糕 -->
+
+        <button id="finishCake">
+
+            Finish my cake ✨
+
+        </button>
+
+
+
+        <!-- ==================== -->
+        <!-- 第三页：蛋糕完成 -->
+        <!-- ==================== -->
+
+        <div id="birthdayMessage">
+
+            <div class="celebration">
+                🎉 ✨ 🎂 ✨ 🎉
+            </div>
+
+            <h2>
+                Your cake is ready!
+            </h2>
+
+            <p>
+                Happy Birthday! 💗
+            </p>
+
+            <p class="little-message">
+
+                You made a special cake<br>
+                for a very special day.
+
+            </p>
+
+
+            <button id="giftButton">
+
+                Open the real gift 💌
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ==================== -->
+        <!-- 第四页：真正的礼物 -->
+        <!-- ==================== -->
+
+        <div id="giftPage">
+
+            <div class="gift-icon">
+                💌
+            </div>
+
+            <h2>
+                For you
+            </h2>
+
+            <p>
+                There is something I want to tell you...
+            </p>
+
+
+            <button id="openLetter">
+
+                Open the letter 💌
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ==================== -->
+        <!-- 第五页：生日信 -->
+        <!-- ==================== -->
+
+        <div id="letterPage">
+
+
+            <!-- 信封 -->
+
+            <div id="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-paper">
+                    💌
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+
+
+            <!-- 打开信件按钮 -->
+
+            <button id="openEnvelope">
+
+                Open the envelope 💌
+
+            </button>
+
+
+
+            <!-- 真正的生日信 -->
+
+            <div class="letter">
+
+
+                <div class="letter-decoration">
+
+                    🌸 ✨ 🌸
+
+                </div>
+
+
+
+                <h2>
+
+                    Dear Levitt,
+
+                </h2>
+
+
+
+                <p>
+
+                    Happy Birthday! 🎂
+
+                </p>
+
+
+
+                <p>
+
+                    I’m really happy that we found our way
+                    back into each other’s lives.
+
+                </p>
+
+
+
+                <p>
+
+                    Even though we didn’t get to know each
+                    other very well when we were younger,
+                    I’m glad that we have the chance to
+                    create new memories now.
+
+                </p>
+
+
+
+                <p>
+
+                    I hope this new year of your life brings
+                    you lots of happiness, good luck,
+                    exciting adventures, and many moments
+                    worth remembering.
+
+                </p>
+
+
+
+                <p>
+
+                    Wherever life takes you, I hope you
+                    always have the courage to follow what
+                    you love and become the person you want
+                    to be.
+
+                </p>
+
+
+
+                <p>
+
+                    And of course, I hope we can make many
+                    more fun memories together in the future. ✨
+
+                </p>
+
+
+
+                <p>
+
+                    Once again, Happy Birthday!
+                    I hope you have an amazing year ahead. 🎉
+
+                </p>
+
+
+
+                <h3>
+
+                    Happy Birthday! 🎂
+
+                </h3>
+
+
+
+                <p class="signature">
+
+                    From 晓冰
+
+                </p>
+
+
+
+                <!-- 前往回忆页面 -->
+
+                <button
+                    onclick="window.location.href='memories.html'">
+
+                    ✨ There's one more thing...
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
